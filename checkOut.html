@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Langfarm</title>
+
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="./fonts/fontawesome-free-5.15.4-web/css/all.min.css">
+    <link rel="stylesheet" href="css/site.css">
+
+    <!-- Jquery -->
+    <script src="./js/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <script type="text/javascript">
+
+
+        $(document).ready(function () {
+
+            $("#navbar-toggler").click(function () {
+                $("#cover").toggleClass("d-none");
+            });
+
+        });
+
+    </script>
+</head>
+
+<body>
+    <label id="cover" for="navbar-toggler" class="cover  d-none"></label>
+
+    <header>
+        <!-- NAVBAR -->
+        <nav class="home_navbar navbar navbar-expand-lg navbar-dark fixed-top bg-info">
+            <div class="container">
+
+                <a class="navbar-brand mr-5" href="index.html">
+                    <img src="images/logo.png" height="30" class="d-inline-block" alt="">
+                </a>
+                <button id="navbar-toggler" class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <a class="navbar-toggler-icon"></a>
+                </button>
+                <div class="collapse navbar-collapse home_navbar-collapse ml-1 " id="navbarCollapse">
+                    <ul class="navbar-nav">
+                        <li class="nav-item nav_input mr-lg-2 mr-xl-5">
+                            <input class="form-control inline-block m-0" type="text" placeholder="Search"> </input>
+                        </li>
+                        <li id="home-link" class="nav-item mr-lg-2 mr-xl-5 ">
+                            <a href="index.html" class="nav-link">Home</a>
+                        </li>
+                        <li id="products-link" class="nav-item">
+                            <a href="allProducts.html" class="mr-lg-2 mr-xl-5 nav-link">All products</a>
+                        </li>
+                        <li id="about-link" class="nav-item">
+                            <a href="about.html" class="mr-lg-2 mr-xl-5 nav-link">About us</a>
+                        </li>
+                        <li class="checkOut nav-item">
+                            <a href="checkOut.html" class="mr-lg-1 mr-xl-4 nav-link active">Order</a>
+                        </li>
+                        <li id="login-link" class="nav-item">
+                            <a href="login.html" class="mr-lg-2 mr-xl-5 nav-link">Login</a>
+                        </li>
+                        <li class="checkOut nav-item">
+                            <a href="checkOut.html" class="nav-link "><i class="fas fa-shopping-cart"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- NAVBAR -->
+    </header>
+
+
+    <!-- Cart-body -->
+    <div class="card-body mt-0 mt-sm-5 pt-md-5">
+        <div class="card checkout-card">
+            <div class="row">
+                <div class="col-md-8 cart">
+                    <div class="title">
+                        <div class="row">
+                            <div class="col">
+                                <h4><b>Shopping Cart</b></h4>
+                            </div>
+                            <div class="col align-self-center text-right text-muted">3 items</div>
+                        </div>
+                    </div>
+                    <div class="row border-top border-bottom">
+                        <div class="row main align-items-center">
+                            <div class="col-2">
+                                <img class="img-fluid" src="./images/products/coconut.jpg">
+                            </div>
+                            <div class="col">
+                                <div class="row text-muted">Fruits</div>
+                                <div class="row">Dried fruit</div>
+                            </div>
+                            <div class="col"><a href="#">-</a><a href="#" class="border">1</a><a href="#">+</a> </div>
+                            <div class="col">$44.00 <span class="close">&#10005;</span></div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="row main align-items-center">
+                            <div class="col-2">
+                                <img class="img-fluid" src="./images/products/cashew.jpg">
+                            </div>
+                            <div class="col">
+                                <div class="row text-muted">Fruits</div>
+                                <div class="row">Dried fruit</div>
+                            </div>
+                            <div class="col"><a href="#">-</a><a href="#" class="border">1</a><a href="#">+</a> </div>
+                            <div class="col">$44.00 <span class="close">&#10005;</span></div>
+                        </div>
+                    </div>
+                    <div class="row border-top border-bottom">
+                        <div class="row main align-items-center">
+                            <div class="col-2">
+                                <img class="img-fluid" src="./images/products/dried_soursop.jpg">
+                            </div>
+                            <div class="col">
+                                <div class="row text-muted">Fruits</div>
+                                <div class="row">Dried fruit</div>
+                            </div>
+                            <div class="col"><a href="#">-</a><a href="#" class="border">1</a><a href="#">+</a> </div>
+                            <div class="col">$44.00 <span class="close">&#10005;</span></div>
+                        </div>
+                    </div>
+                    <div class="back-to-shop"><a href="#">&leftarrow;</a><span class="text-muted">Back to shop</span>
+                    </div>
+                </div>
+                <div class="col-md-4 summary">
+                    <div>
+                        <h5><b>Summary</b></h5>
+                    </div>
+                    <hr>
+                    <div class="row">
+                        <div class="col" style="padding-left: 0;">ITEMS 3</div>
+                        <div class="col text-right">$132.00</div>
+                    </div>
+                    <form>
+                        <p>SHIPPING</p>
+                        <select>
+                            <option class="text-muted">Standard-Delivery- 5$.00</option>
+                        </select>
+                        <p>GIVE CODE</p>
+                        <input id="code" placeholder="Enter your code">
+                    </form>
+                    <div class="row" style="border-top: 1px solid rgba(0,0,0,.1); padding: 2vh 0;">
+                        <div class="col">TOTAL PRICE</div>
+                        <div class="col text-right">$137.00</div>
+                    </div>
+                    <button class="btn">CHECKOUT</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Cart-body -->
+
+
+    <!-- FOOTER -->
+    <footer class="text-center text-white" style="background-color: #f1f1f1;">
+        <!-- Grid container -->
+        <div class="container">
+            <!-- Section: Social media -->
+            <section>
+                <!-- Facebook -->
+                <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="#!" role="button"
+                    data-mdb-ripple-color="dark"><i class="fab fa-facebook-f"></i></a>
+
+                <!-- Twitter -->
+                <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="#!" role="button"
+                    data-mdb-ripple-color="dark"><i class="fab fa-twitter"></i></a>
+
+                <!-- Google -->
+                <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="#!" role="button"
+                    data-mdb-ripple-color="dark"><i class="fab fa-google"></i></a>
+
+                <!-- Instagram -->
+                <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="#!" role="button"
+                    data-mdb-ripple-color="dark"><i class="fab fa-instagram"></i></a>
+
+                <!-- Linkedin -->
+                <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="#!" role="button"
+                    data-mdb-ripple-color="dark"><i class="fab fa-linkedin"></i></a>
+                <!-- Github -->
+                <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="#!" role="button"
+                    data-mdb-ripple-color="dark"><i class="fab fa-github"></i></a>
+            </section>
+            <!-- Section: Social media -->
+        </div>
+        <!-- Grid container -->
+
+        <!-- Copyright -->
+        <div class="text-center text-dark p-2" style="background-color: rgba(0, 0, 0, 0.2); font-size: 90%;">
+            © 2020 Copyright:
+            <a class="text-dark" href="https://mdbootstrap.com/">L'ANGFARM</a>
+        </div>
+        <!-- Copyright -->
+    </footer>
+    <!-- FOOTER -->
+
+    <script src="js/bootstrap.js"></script>
+</body>
+
+</html>
